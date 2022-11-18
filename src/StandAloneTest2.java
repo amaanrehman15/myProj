@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class StandAloneTest {
+public class StandAloneTest2{
 	static String productName = "ZARA COAT 3";
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
@@ -58,3 +58,6 @@ public class StandAloneTest {
 	driver.close();
 }
 }
+
+
+
