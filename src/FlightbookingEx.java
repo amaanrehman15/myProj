@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class FlightbookingEx {
@@ -16,10 +17,10 @@ WebElement staticDropdown=driver.findElement(By.cssSelector("#ctl00_mainContent_
 	
 	Select dropdown=new Select(staticDropdown);
 	dropdown.selectByIndex(3);
+	dropdown.
 	driver.findElement(By.id("divpaxinfo")).click();
 	Thread.sleep(2000);
-	
-	int i=0;
+		int i=0;
 	while(i<4) {
 		driver.findElement(By.id("hrefIncAdt")).click();
 		i++;

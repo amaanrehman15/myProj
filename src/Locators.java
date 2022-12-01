@@ -1,9 +1,14 @@
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import test.TakesScreenshot;
+import test.driver;
 
 public class Locators {
 
@@ -23,6 +28,11 @@ public class Locators {
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		driver.findElement(By.xpath("(//input[@type='text'])[1]")).sendKeys("amaan");
 		
+		 TakesScreenshot ss= ( TakesScreenshot)(driver);
+		File src ts.getScreenshotas(OutputType.FILE);
+		File file=new File(System.getProperty("user.dir")+"//ss.png");
+		FileUtils.copyFile(src,file);
 		
+		 
 	}
 }
